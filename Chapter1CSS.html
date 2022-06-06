@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            /* Type selector example  */
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color:rgb(40, 41, 41);
+            }
+            /* Universal Selector */
+            *{
+             font-style:italic;
+             
+            }
+        </style>
+        <script></script>
+    </head>
+    <body style="background-color: lemonchiffon;">
+        <h1></h1>
+        <div>
+            <h1>Chapter 1</h1>
+            <h2>CSS Syntax</h2>
+            <h3> Selector { Property : values}</h3>
+            <p>Selector Types </p>
+            <ul>
+                <li>Type Selector</li> >> Here We Apply style rules by selecting tags like h1,h3,p..etc.
+                <pre>
+                    Example:-
+                    h1 {
+                        color: #36CFFF; 
+                     }
+                </pre>
+                <li>Universal Selector</li> >> Its denoted by * ,Applies style to entire Document.
+                <pre>
+                    Example:-
+                    *{
+                        color: #36CFFF; 
+                     }
+                </pre>
+                <li>Descendant Selectors</li> >> Suppose you want to apply a style rule to a particular element only when it lies inside a particular element.
+                <pre>
+                    Example:-
+                    ul em {
+                        color: #36CFFF; 
+                     }
+                </pre>
+                <li>ID Selectors</li> >> define style rules based on the id attribute of the elements
+                <pre>
+                    Example:-
+                    #black{
+                        color: #36CFFF; 
+                     }
+                </pre>
+                <li>Class Selectors</li> >> Define style rules based on the class attribute of the elements.
+                <pre>
+                .black {
+                    color: #000000; 
+                 }
+                </pre>
+                <li>Attribute Selectors</li> >>You can also apply styles to HTML elements with particular attributes. The style rule below will match all the input elements having a type attribute with a value of text −
+                <pre>
+                    Example:-
+                    input[type = "text"] {
+                        color: #000000; 
+                     }
+                </pre>
+                <li>Child Selectors</li> >> This rule will render all the paragraphs in black if they are direct child of body element. Other paragraphs put inside other elements like div or td would not have any effect of this rule.
+                <pre>
+                    Example:-
+                    body > p {
+                        color: #36CFFF; 
+                     }
+                </pre>
+                <li>Grouping Selectors</li> >>You can apply a style to many selectors if you like. Just separate the selectors with a comma, as given in the following example.
+                <pre>
+                    Example:-
+                    h1, h2, h3 {
+                        color: #36C;
+                        font-weight: normal;
+                        letter-spacing: .4em;
+                        margin-bottom: 1em;
+                        text-transform: lowercase;
+                     }
+                </pre>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>html Forms</title>
+    <script></script>
+    <style></style>
+</head>
+<body>
+    <div>
+        <h1>Chapter 9</h1>
+        <h2>9.0 Html-Forms</h2>
+        <ol type="1" start="1">
+            <li>Text Input Controls </li>
+            <li> Checkboxes Controls </li>
+            <li> Radio Box Controls </li>
+            <li> Select Box Controls </li>
+            <li> File Select boxes </li>
+            <li> Hidden Controls </li>
+            <li> Clickable Buttons </li>
+            <li> Submit and Reset Button </li>
+        </ol>
+        <h3 align="center">Apply here for Admission in Course</h3>
+        <form>
+            <label>First Name:</label><input type="text" name="first_name" />
+            <br> Last Name:<input type="text" name="last_name" /> <br/> Description : <br />
+            <textarea rows="5" cols="50" name="description">....Say why do you want to join this course </textarea>
+            <h3>Choose the majors</h3>
+            <input type="radio" name="maths" value="on"> Maths
+            <input type="radio" name="physics" value="on"> Physics
+            <h3>Choose the 1st language</h3>
+            <input type="radio" name="subject" value="English"> English
+            <input type="radio" name="subject" value="Kannada"> Kannada
+            <h3>Choose the campus location</h3>
+            <select name="dropdown">
+                <option value = "Bangalore" selected>Bangalore</option>
+                <option value = "Mysore">Mysore</option>
+             </select>
+            <h3>Upload passport sized photo of yours </h3>
+            <input type="file" name="fileupload" accept="image/*" />
+            <br/>
+            <br/>
+            <input type="submit" onclick="Submit();" name="submit" value="Submit" />
+            <input type="reset" name="reset" value="Reset" />
+            <input type="button" name="ok" value="OK" />
+        </form>
+    </div>
+</body>
+</html>
